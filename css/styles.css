@@ -378,8 +378,8 @@ header > .container {
   overflow: hidden;
   border: 0;
   padding: 0;
-  clip: 0 0 0 0;
-  clip-path-inset: 50%;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -651,7 +651,7 @@ header > .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .input-footer {
@@ -748,6 +748,7 @@ header > .container {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   padding: 8px;
+  cursor: pointer;
 }
 
 .icon-close {
@@ -888,6 +889,14 @@ header > .container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.checkbox-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33px;
+  letter-spacing: 0.04em;
+  color: var(--dark-blue);
 }
 
 .check-text span {
