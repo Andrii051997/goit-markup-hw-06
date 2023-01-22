@@ -663,6 +663,12 @@ header > .container {
   padding-left: 16px;
   caret-color: var(--color-white);
   margin-right: 24px;
+  transition: border-color var(--transition);
+}
+
+.input-footer:hover,
+.input-footer:focus {
+  border-color: var(--dark-blue);
 }
 
 .input-footer::placeholder {
